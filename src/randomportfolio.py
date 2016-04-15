@@ -53,13 +53,13 @@ def parseInfo():
     parser.add_argument("-s", "--seed", type=int,  help="seed number", default=42)
     parser.add_argument("-e", "--param_e", type=float, help="the e parameter for the method", default=0.002)
     parser.add_argument("-v", "--param_v", type=float, help="the v parameter for the method", default=0.000004)
-    parser.add_argument("-b", "--param_e_bar", type=float, help="the e-bar parameter for the method", default=0.04)
+    parser.add_argument("-b", "--param_e_bar", type=float, help="the e-bar parameter for the method", default=0.1)
     parser.add_argument("-ml", "--mu_lowerb", type=float, help="lower bound for expected returns", default=-0.02)
     parser.add_argument("-mu", "--mu_upperb", type=float, help="upper bound for expected returns", default=0.1)
-    parser.add_argument("-bl", "--batch_lowerb", type=int, help="lower bound for batch sizes", default=100)
+    parser.add_argument("-bl", "--batch_lowerb", type=int, help="lower bound for batch sizes", default=999)
     parser.add_argument("-bu", "--batch_upperb", type=int, help="upper bound for batch sizes", default=1000)
-    parser.add_argument("-pl", "--price_lowerb", type=float, help="lower bound for asset prices", default=10)
-    parser.add_argument("-pu", "--price_upperb", type=float, help="upper bound for asset prices", default=125)
+    parser.add_argument("-pl", "--price_lowerb", type=float, help="lower bound for asset prices", default=1)
+    parser.add_argument("-pu", "--price_upperb", type=float, help="upper bound for asset prices", default=1.1)
     global args
     args = parser.parse_args()
     if args.param_e_bar <= args.param_e:
