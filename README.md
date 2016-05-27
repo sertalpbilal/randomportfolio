@@ -71,6 +71,7 @@ SOFTWARE.
 
 [![DOI](https://zenodo.org/badge/22332/sertalpbilal/randomportfolio.svg)](https://zenodo.org/badge/latestdoi/22332/sertalpbilal/randomportfolio)
 
+```
 @Misc{sertalp2016randomportfolio,
   Title                    = {Random Portfolio Dataset Generator},
   Author                   = {Sertalp B. \c{C}ay},
@@ -78,3 +79,4 @@ SOFTWARE.
   doi = {10.5281/zenodo.53204},
   url = {http://dx.doi.org/10.5281/zenodo.53204}
 }
+```
